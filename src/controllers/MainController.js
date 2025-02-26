@@ -1,15 +1,9 @@
-const Injection = require('../../../facades/Injection');
-const Lang = require('../../../facades/Lang');
-const Validator = require('../../../facades/Validator');
-const Controller = require('../../../foundation/Controller');
-const Auth = require('../../authentication/facades/Auth');
-const Workspace = require('../../core/facades/Workspace');
+const { Controller } = require('@farahub/framework/foundation');
+const { Injection, Lang, Validator, Auth, Workspace, Event, Doc } = require('@farahub/framework/facades');
 const RoleListValidator = require('../validators/RoleListValidator');
 const CreateOrUpdateRoleValidator = require('../validators/CreateOrUpdateRoleValidator');
-const Event = require('../../../facades/Event');
 const RoleCreatedOrUpdated = require('../events/RoleCreatedOrUpdated');
 const RoleDeleteValidator = require('../validators/RoleDeleteValidator');
-const Doc = require('../../../facades/Doc');
 const RoleDeleted = require('../events/RoleDeleted');
 
 
