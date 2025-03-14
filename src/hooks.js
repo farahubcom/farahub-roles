@@ -81,7 +81,7 @@ const hooks = module => ({
             }
         },
         'main.createOrUpdate.preSave': async ({ data, connection, inject, person }) => {
-            person.roles = data.roles.map(role => role.id);
+            person.roles = data.roles?.map(role => role.id);
         },
     }
     //    
