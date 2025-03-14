@@ -18,6 +18,11 @@ class Role {
 
             // create instance
             const role = roleId ? await Role.findById(roleId) : new Role();
+            
+            // assign identifier if provided
+            if(role.isNew && data.identifier) {
+                role.identifier = data.identifier;
+            }
 
             // assign name
             role.name = {
