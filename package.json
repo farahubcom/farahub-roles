@@ -1,6 +1,6 @@
 {
     "name": "@farahub/roles",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Roles module for the Farahub framework",
     "repository": {
         "type": "git",

@@ -3,7 +3,6 @@ const models = require('./models');
 const schemas = require('./schemas');
 const controllers = require('./controllers');
 const hooks = require('./hooks');
-const listeners = require('./listeners');
 
 
 class RolesModule extends Module {
@@ -46,7 +45,6 @@ class RolesModule extends Module {
     register() {
         this.registerModels(models);
         this.registerSchemas(schemas);
-        this.registerListeners(listeners);
         this.registerControllers(controllers);
     }
 }
