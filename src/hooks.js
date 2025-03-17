@@ -38,6 +38,14 @@ const hooks = module => ({
             }
         }
     },
+    'People': {
+        'main.details.populate': async () => {
+            return {
+                path: 'roles',
+                select: 'name'
+            }
+        },
+    }
 })
 
 module.exports = hooks;
